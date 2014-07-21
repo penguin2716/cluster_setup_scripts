@@ -1,3 +1,10 @@
 * Of course it's better to use Chef instead, but...
   I love Chef of course, but not all members of my laboratory have enough knowledge about Chef unfortunately. So I had to write these automation script set ;-(
   
+* How to use
+  Just copy the scipt to each cluster node, and execute them.
+
+  : for ip in {1..64}; do
+  :   scp ./zabbix-agent.sh root@192.168.100.$ip:~
+  :   ssh root@192.168.100.$ip /root/zabbix-agent.sh
+  : done
