@@ -8,3 +8,6 @@
   :   scp ./zabbix-agent.sh root@192.168.100.$ip:~
   :   ssh root@192.168.100.$ip /root/zabbix-agent.sh
   : done
+
+* License
+  MIT License.
